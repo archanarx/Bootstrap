@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profile - Fictional Company</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+    .team-photo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4">Our Team</h1>
+            <p class="lead">Together we build the future.</p>
+        </div>
+
+        <blockquote class="blockquote text-center mb-5">
+            <p class="mb-0">"Alone we can do so little; together we can do so much."</p>
+            <footer class="blockquote-footer">Helen Keller</footer>
+        </blockquote>
+
+        <div class="mb-5">
+            <h3>Our Core Values</h3>
+            <ul class="list-group">
+                <li class="list-group-item">💡 Innovation</li>
+                <li class="list-group-item">🤝 Collaboration</li>
+                <li class="list-group-item">🎯 Excellence</li>
+            </ul>
+         </div>
+
+         <div class="text-center mb-5">
+            <img src="data:image/jpeg;base64,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" alt="Team Photo" class="team-photo shadow" />
+        </div>  
+
+        <div class="mb-4">
+            <h3>Meet Our Team</h3>
+            <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+            <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Alice Johnson</td>
+            <td>Project Manager</td>
+            <td><span class="badge badge-success">Active</span></td>
+            </tr>
+            <tr>
+            <td>Bob Smith</td>
+            <td>UI/UX Designer</td>
+            <td><span class="badge badge-warning">On Leave</span></td>
+            </tr>
+            <tr>
+            <td>Charlie Davis</td>
+            <td>Developer</td>
+            <td><span class="badge badge-danger">Resigned</span></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+      ⚠️ Attention: One or more employees are not currently active.
+        </div>
+
+        
+    </div>
+</body>
+</html>
