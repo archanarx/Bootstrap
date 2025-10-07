@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Progress Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class = "breadcrumb">
+                <li class = "breadcrumb-item"><a href = "#">Home</a></li>
+                <li class = "breadcrumb-item"><a href="#">Courses</a></li>
+                <li class = "breadcrumb-item active" aria-current = "page">Web Development</li>
+            </ol>
+        </nav>     
+    
+        <div class="text-center mb-4">
+            <h1>Web Development Course <span class="badge badge-pill badge-info">New</span></h1>
+        </div>
+
+        <div class="mb-4">
+            <h5>HTML</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
+            </div>  
+            
+            <h5>CSS</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+            </div>
+
+            <h5>JavaScript</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-warning " style="width:50%">50%</div>
+            </div>
+
+            <h5>Bootstrap</h5>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-danger " style="width:25%">25%</div>
+            </div>
+
+        </div>
+
+        <div class="text-center mb-5">
+            <div class="btn-group" role="group" aria-label="controls">
+                <button type="button" class="btn btn-outline-danger mb-3">Start</button>
+                <button type="button" class="btn btn-outline-dark mb-3">Pause</button>
+                <button type="button" class="btn btn-outline-info mb-3">Reset</button>
+            </div>
+        </div>
+
+        <nav aria-label="page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>    
+    </div>   
+</body>
+</html>
