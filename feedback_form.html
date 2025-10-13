@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Bakery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class = "container mt-3">
+        <h2 class="mb-3 text-center">City Bakery Feedback Form</h2>
+        <form class = "form" action = "/action_page.php" method="post">
+            <!-- Name -->
+            <div class="form-group">
+                <label for = "name">Name :</label>
+                <input type = "text" class = "form-control" id = "name" name="name" 
+                placeholder = "Enter your name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for = "email">Email :</label>  
+                <input type = "email" class = "form-control" id = "email" name="email"
+                placeholder = "Enter your email" required>
+            </div>
+
+            <!-- Feedback Textarea -->
+            <div class="form-group">
+                <label for="comment">Feedback :</label>
+                <textarea class="form-control" id="comment" name="comment" rows="4" placeholder="Write your feedback here..." required></textarea>
+            </div>
+            
+            <!--Inline Radio options -->
+            <div class="form-group">
+                <label>How should we reach out to you?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="contact" id="contactemail" value="Email"required>
+                    <label class="form-check-label" for="contactEmail">Email</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="contact" id="contactPhone" value="Phone">
+                    <label class="form-check-label" for="contactPhone">Phone</label>
+                </div>
+            </div>
+
+            <!--Satisfaction Range -->
+             <div class="form-group">
+                <label for="satisfaction">How satisfied are you with our service?  (1 to 10)</label>
+                <input type="range" class="form-control-range" id="satisfaction" min="1" max="10" required>
+            </div>
+
+            <!--Order Type Dropdown -->
+            <div class="form-group">
+                <label for="orderType">Choose the type of order :</label>
+                <select class="form-control" id="oredrType" name="orderType" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option>Cakes</option>
+                    <option>Cookies</option>
+                    <option>Pastries</option>
+                </select>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type = "submit" class = "btn btn-warning">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>
